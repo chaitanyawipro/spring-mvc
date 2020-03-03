@@ -17,7 +17,7 @@ spec:
         run: deployment-name
     spec:
       containers:
-      - image: wiprorepo/springmvc:latest
+      - image: wiprorepo/springmvcc:latest
         name: deployment-name
         ports:
         - containerPort: 8080
