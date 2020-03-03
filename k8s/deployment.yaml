@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    run: deployment-name
-  name: deployment-name
+    run: springmvc
+  name: springmvc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: deployment-name
+      run: springmvc
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        run: deployment-name
+        run: springmvc
     spec:
       containers:
-      - image: wiprorepo/springmvcc:latest
-        name: deployment-name
+      - image: wiprorepo/springmvc:latest
+        name: springmvc
         ports:
         - containerPort: 8080
         resources: {}
