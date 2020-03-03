@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hts application_id="0" profile_id="0" timestamp="2020-03-02T10:34:02.385">
+<package name="com.wipro.service">
+<file name="securityApplication.java">
+<violation beginline="15" endline="15" begincolumn="17" endcolumn="25" rule="Java_Standards" subRule="HashTableUSage" ruleset="Basic Rules" package="com.wipro.service" class="securityApplication" method="getDBConnDetails" falsePositive="N" priority="5">
+Hashtable  usage detected
+</violation>
+<violation beginline="17" endline="17" begincolumn="17" endcolumn="25" rule="Java_Standards" subRule="HashTableUSage" ruleset="Basic Rules" package="com.wipro.service" class="securityApplication" method="getDBConnDetails" falsePositive="N" priority="5">
+Hashtable  usage detected
+</violation>
+<violation beginline="29" endline="29" begincolumn="17" endcolumn="25" rule="Java_Standards" subRule="HashTableUSage" ruleset="Basic Rules" package="com.wipro.service" class="securityApplication" method="sendTheTxnData" falsePositive="N" priority="5">
+Hashtable  usage detected
+</violation>
+</file>
+<file name="decodeMessage.java">
+<violation beginline="26" endline="26" begincolumn="51" endcolumn="71" rule="Java_Standards" subRule="Possible_HardCoded_Path" ruleset="Basic Rules" package="com.wipro.service" class="decodeMessage" method="aesDecrypt" falsePositive="N" priority="3">
+Hardcoded file path usage detected 
+</violation>
+<violation beginline="37" endline="37" begincolumn="17" endcolumn="33" rule="Onpremise_to_Cloud" subRule="Catch_StackTrace" ruleset="Basic Rules" package="com.wipro.service" class="decodeMessage" method="aesDecrypt" falsePositive="N" priority="3">
+Checking the printStackTrace method
+</violation>
+</file>
+<file name="InitialContext.java">
+<violation beginline="9" endline="9" begincolumn="24" endcolumn="32" rule="Java_Standards" subRule="HashTableUSage" ruleset="Basic Rules" package="com.wipro.service" class="InitialContext" falsePositive="N" priority="5">
+Hashtable  usage detected
+</violation>
+</file>
+</package>
+<package name="com.wipro.controller">
+<file name="HomeController.java">
+<violation beginline="23" endline="23" begincolumn="17" endcolumn="34" rule="Java_Standards" subRule="Inline_SOP_OUT" ruleset="Basic Rules" package="com.wipro.controller" class="HomeController" method="home" falsePositive="N" priority="3">
+Inline System out presence(System.out)
+</violation>
+<violation beginline="36" endline="36" begincolumn="17" endcolumn="34" rule="Java_Standards" subRule="Inline_SOP_OUT" ruleset="Basic Rules" package="com.wipro.controller" class="HomeController" method="user" falsePositive="N" priority="3">
+Inline System out presence(System.out)
+</violation>
+</file>
+</package>
+</hts>
