@@ -3,12 +3,12 @@ kind: Service
 metadata:
   labels:
     run: springmvc
-  name: springmvc-service-${BUILD_NUMBER}
+  name: springmvc-service-${env.BUILD_NUMBER}
 spec:
   ports:
   - port: 8080
     targetPort: 8080
   selector:
-    run: springmvc-${BUILD_NUMBER}
+    run: springmvc-${env.BUILD_NUMBER}
   sessionAffinity: None
   type: LoadBalancer
