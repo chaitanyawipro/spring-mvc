@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     run: springmvc
-  name: springmvc-{BUILD_NUMBER}
+  name: 'springmvc-{BUILD_NUMBER}'
 spec:
   replicas: 1
   selector:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - image: wiprorepo/springmvc:latest
-        name: springmvc-{BUILD_NUMBER}
+        name: 'springmvc-{BUILD_NUMBER}'
         ports:
         - containerPort: 8080
         resources: {}
